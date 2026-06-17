@@ -17,9 +17,9 @@ const App = () => {
   }
 
   return (
-    <div>
-      <h1>Hello World in 11</h1>
-      <p>How good at you at recognizing "Hello World!" in different programming languages? Test your knowledge here!</p>
+    <div className="App" >
+      <h1>Hello World in 11 🚀</h1>
+      <h4>How good at you at recognizing "Hello World!" in different programming languages? Test your knowledge here!</h4>
       <p>Number of cards: 11</p>
 
       <Card 

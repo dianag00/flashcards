@@ -1,21 +1,17 @@
 import { useState } from 'react';
 
 const Card = (props) => { // passing props (from App.jsx) to the Card component
-
-    let content; // storing the value of props here
-
-    if (props.isFlipped) { 
-        content = props.answer;
-    }
-    else {
-        content = props.question;
-    }
-
-    return ( // setting an event handler onClick which expects a function as its value -- hence the arrow functiuon which wraps around the props setIsFlipped to execute until the click actually happens!
-        <div onClick={() => props.setIsFlipped(!props.isFlipped)}>
-            {content}
+    return(
+    <div className="flip-card" onClick={() => props.setIsFlipped(!props.isFlipped)}>
+        <div className={props.isFlipped ? "flip-card-inner flipped" : "flip-card-inner"}> {/* if isFlipped is true then use class flip-card-inner flipped, otherwise just use flip-card-inner */}
+            <div className="flip-card-front">
+                {props.question}
+            </div>
+            <div className="flip-card-back">
+                {props.answer}
+            </div>
         </div>
-
+    </div>
     )
 }
 
