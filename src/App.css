@@ -100,3 +100,35 @@ button {
 button:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+
+.disabled {
+  background-color: rgb(210, 210, 210);
+}
+
+
+.correct {
+  background-color: rgb(3, 241, 3);
+
+}
+
+.incorrect {
+  background-color: red;
+
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  
+
+
+}
+
+.answer-field {
+  margin: 25px;
+
+}
